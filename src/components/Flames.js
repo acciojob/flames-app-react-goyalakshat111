@@ -44,12 +44,14 @@ const Flames = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Enter first name" ref={name1} />
-        <input type="text" placeholder="Enter second name" ref={name2} />
-        <button type="submit">Calculate Relationship Future</button>
-        <button type="reset">Clear</button>
+        <input type="text" placeholder="Enter first name" ref={name1}  data-testid="input1" name="name1"/>
+        <input type="text" placeholder="Enter second name" ref={name2} data- testid="input2" name="name2"/>
+        <button type="submit" testid="calculate_relationship" name="calculate_relationship">
+        Calculate Relationship Future</button>
+        <button type="reset" data-testid="clear" name="clear">
+            Clear</button>
       </form>
-      <h3>{result}</h3>
+      <h3 data-testid="answer">{result}</h3>
     </div>
   );
 };
