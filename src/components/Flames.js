@@ -30,12 +30,12 @@ const Flames = () => {
 
     let total = arr1.length + arr2.length;
     let relationship = [
+      "Siblings",
       "Friends",
       "Love",
       "Affection",
       "Marriage",
-      "Enemy",
-      "Siblings",
+      "Enemy"
     ];
 
     setResult(relationship[total%6]);
