@@ -1,15 +1,16 @@
-import React, {Component, useState} from "react";
+import React from "react";
 import '../styles/App.css';
+import Flames from "./Flames";
 
-class App extends Component {
-    render() {
+const App = ()=> {
+    
 
         return(
             <div id="main">
-               {/* Do not remove the main div */}
+                <Flames/>
             </div>
         )
-    }
+    
 }
 
 
